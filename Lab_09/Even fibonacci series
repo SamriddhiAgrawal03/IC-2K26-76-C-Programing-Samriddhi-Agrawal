@@ -1,0 +1,30 @@
+//Even fibonacci series
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Samriddhi Agrawal solving for even fibonacci series \n");
+    int n, a = 0, b = 1, c, i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Even Fibonacci numbers: ");
+
+    for(i = 1; i <= n; i++)
+    {
+        if(a % 2 == 0)
+        {
+            printf("%d ", a);
+        }
+
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    return 0;
+}

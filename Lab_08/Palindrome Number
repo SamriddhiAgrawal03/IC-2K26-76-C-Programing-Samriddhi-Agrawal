@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Samriddhi Agrawal solving for Palindrome Number\n");
+
+    int n, original, remainder, reverse = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    original = n;
+
+    while(n > 0)
+    {
+        remainder = n % 10;
+        reverse = reverse * 10 + remainder;
+        n = n / 10;
+    }
+
+    if(original == reverse)
+    {
+        printf("%d is a Palindrome Number", original);
+    }
+    else
+    {
+        printf("%d is not a Palindrome Number", original);
+    }
+
+    return 0;
+}

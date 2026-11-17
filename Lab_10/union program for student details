@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+union student
+{
+    int rollno;
+    float marks;
+    char grade;
+};
+
+int main()
+{
+    printf("Samriddhi Agrawal solving for Union\n");
+
+    union student s;
+
+    s.rollno = 76;
+    printf("Roll Number = %d\n", s.rollno);
+
+    s.marks = 85.5;
+    printf("Marks = %.2f\n", s.marks);
+
+    s.grade = 'A';
+    printf("Grade = %c\n", s.grade);
+
+    return 0;
+}
